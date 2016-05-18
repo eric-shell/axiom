@@ -1,4 +1,51 @@
 // Type
+@font-face {
+  font-family: 'oblique';
+  src: url('Avenir-Oblique.eot');
+  src: url('Avenir-Oblique.woff2') format('woff2'),
+       url('Avenir-Oblique.woff') format('woff'),
+       url('Avenir-Oblique.ttf') format('truetype'),
+       url('Avenir-Oblique.svg#Avenir-Oblique') format('svg'),
+       url('Avenir-Oblique.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roman';
+  src: url('../fonts/Avenir-Roman.eot');
+  src: url('../fonts/Avenir-Roman.woff2') format('woff2'),
+       url('../fonts/Avenir-Roman.woff') format('woff'),
+       url('../fonts/Avenir-Roman.ttf') format('truetype'),
+       url('../fonts/Avenir-Roman.svg#Avenir-Roman') format('svg'),
+       url('../fonts/Avenir-Roman.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heavy';
+  src: url('Avenir-Heavy.eot');
+  src: url('Avenir-Heavy.woff2') format('woff2'),
+       url('Avenir-Heavy.woff') format('woff'),
+       url('Avenir-Heavy.ttf') format('truetype'),
+       url('Avenir-Heavy.svg#Avenir-Heavy') format('svg'),
+       url('Avenir-Heavy.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.oblique{
+  font-family: 'oblique', sans-serif;
+}
+
+.roman{
+  font-family: 'roman', sans-serif;
+}
+
+.heavy{
+  font-family: 'heavy', sans-serif;
+}
 
 @media #{$small-up}{
 }
