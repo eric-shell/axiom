@@ -35,23 +35,19 @@
   font-style: normal;
 }
 
-.oblique{
-  font-family: 'oblique', sans-serif;
-}
+$oblique: 'oblique', sans-serif;
+$roman: 'roman', sans-serif;
+$heavy: 'heavy', sans-serif;
 
-.roman{
-  font-family: 'roman', sans-serif;
-}
-
-.heavy{
-  font-family: 'heavy', sans-serif;
+body{
+  font-family: $roman;
 }
 
 .cta{
   padding: 15px 25px;
   border-radius: 2px;
   font-size: 14px;
-  font-family: 'heavy';
+  font-family: $heavy;
   text-transform: uppercase;
   text-decoration: none;
 
@@ -66,13 +62,4 @@
       transition: $in-transition;
     }
   }
-}
-
-@media #{$small-up}{
-}
-
-@media #{$medium-up}{
-}
-
-@media #{$large-up}{
 }

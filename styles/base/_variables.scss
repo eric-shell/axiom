@@ -1,7 +1,8 @@
 // Colors
 $white: #ffffff;
-$gray-light: #464646;
-$gray-dark: #545454;
+$gray-light: #bcbcbc;
+$gray-medium: #545454;
+$gray-dark: #323232;
 $seafoam: #53e5bc;
 
 // Transistions
@@ -10,9 +11,12 @@ $out-transition: all .25s ease-in-out;
 
 // Screen size breakpoints
 $screen-small: 550px;
-$screen-medium: 1000px;
-$screen-large: 1250px;
+$screen-medium: 900px;
+$screen-large: 1184px;
 $screen-xlarge: 1600px;
+
+// Elements
+$container: 1184px;
 
 // Individual media queries
 $small-only: 'screen and (max-width: #{$screen-small})';

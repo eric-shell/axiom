@@ -1,0 +1,36 @@
+@media #{$small-up}{
+  footer{
+    display: flex;
+
+    .footer-join{
+      width: 70%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      background: $gray-dark;
+
+      a{
+        color: $seafoam;
+        text-decoration: none;
+      }
+    }
+
+    .footer-social{
+      width: 30%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $gray-dark;
+      background: $seafoam;
+    }
+  }
+}
+
+@media #{$medium-up}{
+}
+
+@media #{$large-up}{
+}

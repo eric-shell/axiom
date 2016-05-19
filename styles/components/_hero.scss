@@ -1,7 +1,15 @@
-#hero{
-  color: $white;
-  height: 80vh;
-  background: url(../images/hero-large.png);
-  background-size: cover;
-  background-position: center bottom;
+@media #{$small-up}{
+  #hero{
+    color: $white;
+    height: 80vh;
+    background: url(../images/hero-large.png);
+    background-size: cover;
+    background-position: center bottom;
+  }
+}
+
+@media #{$medium-up}{
+}
+
+@media #{$large-up}{
 }
