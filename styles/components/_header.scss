@@ -9,12 +9,14 @@
       position: absolute;
       left: calc(50% - 74px);
       top: 43px;
+      animation: fromTop 1s ease-in-out;
     }
 
     .header-cta{
       position: absolute;
       right: 34px;
       top: 34px;
+      animation: fromRight 1s ease-in-out;
     }
   }
 }
