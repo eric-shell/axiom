@@ -29,6 +29,16 @@
         background: $gray-dark;
       }
     }
+
+    #device{
+      z-index: 10;
+      position: absolute;
+      right: 0;
+      bottom: -128px;
+      width: 401px;
+      height: 736px;
+      background: url(../images/phone.png);
+    }
   }
 }
 
