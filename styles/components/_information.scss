@@ -3,6 +3,19 @@
     padding: 0 17px;
     background: $white-off;
 
+    &.visible{
+
+      #tone{
+        opacity: 1;
+        animation: fromLeft 1s ease-in-out;
+      }
+
+      #kickstarter{
+        opacity: 1;
+        animation: fromRight 1s ease-in-out;
+      }
+    }
+
     .container{
       display: flex;
       justify-content: space-between;
@@ -11,6 +24,7 @@
     }
 
     #tone{
+      opacity: 0;
       z-index: 10;
       width: calc(60% - 17px);
       position: relative;
@@ -23,6 +37,7 @@
     }
 
     #kickstarter{
+      opacity: 0;
       z-index: 10;
       width: calc(40% - 17px); 
       position: relative;

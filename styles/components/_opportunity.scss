@@ -10,8 +10,17 @@
     background-size: cover;
     background-position: center bottom;
 
+    &.visible{
+
+      #headline{
+        opacity: 1;
+        animation: fromLeft 1s ease-in-out;
+      }
+    }
+
     #headline{
       width: 40%;
+      opacity: 0;
       min-width: 540px;
       height: 100%;
       display: flex;

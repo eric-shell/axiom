@@ -1,8 +1,14 @@
 @media #{$small-up}{
   #features{
     z-index: 5;
+    opacity: 0;
     padding: 0 17px;
     position: relative;
+
+    &.visible{
+      opacity: 1;
+      animation: reveal 1s ease-in-out;
+    }
 
     .container{
       display: flex;
