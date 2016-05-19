@@ -1,7 +1,7 @@
 @media #{$small-up}{
   #hero{
     z-index: 1;
-    height: 760px;
+
     padding: 0 17px;
     color: $white;
     position: relative;
@@ -20,7 +20,7 @@
     }
 
     #headline{
-      width: 40%;
+      width: 100%;
       min-width: 530px;
       height: 100%;
       display: flex;
@@ -40,9 +40,7 @@
 
     #device{
       z-index: 10;
-      position: absolute;
-      right: 22px;
-      bottom: -128px;
+      position: relative;
       width: 401px;
       height: 736px;
       animation: reveal 1s ease-in-out;
@@ -54,4 +52,28 @@
 }
 
 @media #{$large-up}{
+
+  #hero{
+    height: 760px;
+
+    #headline{
+      width: 40%;
+    }
+
+    #device{
+      position: absolute;
+      right: -22px;
+      bottom: -128px;
+    }
+  }
+}
+
+@media #{$xlarge-up}{
+
+  #hero{
+
+    #device{
+      right: 22px;
+    }
+  }
 }
