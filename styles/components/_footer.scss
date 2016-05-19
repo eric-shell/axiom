@@ -45,6 +45,49 @@
       justify-content: center;
       color: $gray-dark;
       background: $seafoam;
+
+      #social-links{
+        a{
+          width: 50px;
+          height: 50px;
+          float: left;
+          background: url(../images/social.svg);
+          background-size: 150px 100px;
+          background-position: 0 0;
+
+          &:first-child{
+            margin-right: 17px;
+          }
+
+          &:last-child{
+            margin-left: 17px;
+          }
+
+          &.facebook{
+            background-position: 0 0;
+
+            &:hover{
+              background-position: 0 -50px;
+            }
+          }
+
+          &.twitter{
+            background-position: -50px 0;
+
+            &:hover{
+              background-position: -50px -50px;
+            }
+          }
+
+          &.instagram{
+            background-position: -100px 0;
+
+            &:hover{
+              background-position: -100px -50px;
+            }
+          }
+        }
+      }
     }
   }
 }
