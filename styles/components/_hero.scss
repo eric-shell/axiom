@@ -24,6 +24,10 @@
       flex-direction: column;
       justify-content: center;
 
+      h3{
+        padding-left: 8px;
+      }
+
       .box{
         color: $gray-medium;
         background: $gray-dark;
