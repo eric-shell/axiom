@@ -1,6 +1,7 @@
 #hero{
-  color: #fff;
-  background: $gray-light;
-  min-height: 700px;
-  font-family: 'roman';
+  color: $white;
+  height: 80vh;
+  background: url(../images/hero-large.png);
+  background-size: cover;
+  background-position: center bottom;
 }

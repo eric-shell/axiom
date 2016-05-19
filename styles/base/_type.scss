@@ -1,12 +1,12 @@
 // Type
 @font-face {
   font-family: 'oblique';
-  src: url('Avenir-Oblique.eot');
-  src: url('Avenir-Oblique.woff2') format('woff2'),
-       url('Avenir-Oblique.woff') format('woff'),
-       url('Avenir-Oblique.ttf') format('truetype'),
-       url('Avenir-Oblique.svg#Avenir-Oblique') format('svg'),
-       url('Avenir-Oblique.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Avenir-Oblique.eot');
+  src: url('../fonts/Avenir-Oblique.woff2') format('woff2'),
+       url('../fonts/Avenir-Oblique.woff') format('woff'),
+       url('../fonts/Avenir-Oblique.ttf') format('truetype'),
+       url('../fonts/Avenir-Oblique.svg#Avenir-Oblique') format('svg'),
+       url('../fonts/Avenir-Oblique.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,12 +25,12 @@
 
 @font-face {
   font-family: 'heavy';
-  src: url('Avenir-Heavy.eot');
-  src: url('Avenir-Heavy.woff2') format('woff2'),
-       url('Avenir-Heavy.woff') format('woff'),
-       url('Avenir-Heavy.ttf') format('truetype'),
-       url('Avenir-Heavy.svg#Avenir-Heavy') format('svg'),
-       url('Avenir-Heavy.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/Avenir-Heavy.eot');
+  src: url('../fonts/Avenir-Heavy.woff2') format('woff2'),
+       url('../fonts/Avenir-Heavy.woff') format('woff'),
+       url('../fonts/Avenir-Heavy.ttf') format('truetype'),
+       url('../fonts/Avenir-Heavy.svg#Avenir-Heavy') format('svg'),
+       url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -45,6 +45,20 @@
 
 .heavy{
   font-family: 'heavy', sans-serif;
+}
+
+.cta{
+  padding: 15px 25px;
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: 'heavy';
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &.cta-seafoam{
+    color: $gray-dark;
+    background: $seafoam;
+  }
 }
 
 @media #{$small-up}{
