@@ -1,0 +1,69 @@
+@media #{$small-up}{
+  #features{
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      background: $white;
+      padding: 17px;
+    }
+
+    .feature{
+      width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 68px 34px;
+
+      .icon-container{
+        height: 62px;
+        display: flex;
+        align-items: center;
+        margin: 0 0 20px;
+      }
+
+      img.upload{
+        width: 57px;
+        height: 55px;
+      }
+
+      img.discover{
+        width: 52px;
+        height: 52px;
+      }
+
+      img.follow{
+        width: 52px;
+        height: 62px;
+      }
+
+      img.chart{
+        width: 59px;
+        height: 34px;
+      }
+
+      p{
+        max-width: 260px;
+      }
+
+      p.title{
+        font-family: 'heavy';
+      }
+
+      &:nth-child(even){
+        border-left: 1px solid #e6e6e6;        
+      }
+
+      &:nth-child(n+3){
+        border-top: 1px solid #e6e6e6;
+      }
+    }
+  } 
+}
+
+@media #{$medium-up}{
+}
+
+@media #{$large-up}{
+}
