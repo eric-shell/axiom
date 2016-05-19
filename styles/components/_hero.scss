@@ -2,6 +2,7 @@
   #hero{
     z-index: 1;
     height: 760px;
+    padding: 0 17px;
     color: $white;
     position: relative;
     background: url(../images/hero-large.png);
@@ -14,6 +15,7 @@
       height: 175px;
       position: absolute;
       bottom: -175px;
+      left: 0;
       background: linear-gradient(#d1d1d1, transparent);
     }
 
