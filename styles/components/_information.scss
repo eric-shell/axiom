@@ -1,7 +1,63 @@
 @media #{$small-up}{
   #information{
     background: $white-off;
-    min-height: 300px;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: -68px auto 34px;
+    }
+
+    #tone{
+      z-index: 10;
+      width: calc(60% - 17px);
+      position: relative;
+      background: $white;
+      padding: 60px 70px;
+
+      p{
+        padding: 8px 0 0;
+      }
+    }
+
+    #kickstarter{
+      z-index: 10;
+      width: calc(40% - 17px); 
+      position: relative;
+      background: $white;
+      padding: 30px;
+    }
+
+    .dashed-border{
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      border: 1px dashed $seafoam;
+    }
+
+    .release-info{
+      font-family: 'oblique';
+
+      span{
+        top: 4px;
+        position: relative;
+      }
+
+      &:before{
+        content: '';
+        width: 51px;
+        height: 51px;
+        margin: 0 15px 0 0;
+        float: left;
+        background: url(../images/app-logo.svg);
+      }
+    }
+
+    .box{
+      color: $white;
+      background: $seafoam;
+    }
   }
 }
 

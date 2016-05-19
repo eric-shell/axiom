@@ -21,15 +21,10 @@ img{
   outline: 0;
 }
 
-// Setting base background for browsers with elastic viewports
-html{
-  background: $gray-light;
-}
-
 // Setting the basic content background
 body{
+  background: $white-off;
   position: relative;
-  background: $white;
   height: 100%;
   width: 100%;
   font-size: 100%;
