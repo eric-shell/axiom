@@ -23,13 +23,13 @@ img{
 
 // Setting base background for browsers with elastic viewports
 html{
-  background: $dark;
+  background: $gray-light;
 }
 
 // Setting the basic content background
 body{
   position: relative;
-  background: #fff;
+  background: $white;
   height: 100%;
   width: 100%;
   font-size: 100%;
