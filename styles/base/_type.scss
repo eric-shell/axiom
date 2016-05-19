@@ -58,6 +58,13 @@
   &.cta-seafoam{
     color: $gray-dark;
     background: $seafoam;
+    transition: $out-transition;
+
+    &:hover,
+    &:focus{
+      background: $white;
+      transition: $in-transition;
+    }
   }
 }
 
