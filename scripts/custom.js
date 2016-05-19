@@ -30,4 +30,4 @@ $.fn.addClassWhenInView = function (classname) {
   });
 }
 
-$('#hero, #information, #features, #opportunity').addClassWhenInView('visible');
+$('#hero, #information, #features, #opportunity, footer').addClassWhenInView('visible');

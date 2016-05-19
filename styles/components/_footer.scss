@@ -2,6 +2,19 @@
   footer{
     display: flex;
 
+    &.visible{
+
+      .footer-join p{
+        opacity: 1;
+        animation: reveal 1s ease-in-out;
+      }
+
+      .footer-social #social-links{
+        opacity: 1;
+        animation: reveal 1s ease-in-out;
+      }
+    }
+
     .footer-join{
       width: 70%;
       height: 200px;
@@ -12,6 +25,7 @@
       background: $gray-dark;
 
       p{
+        opacity: 0;
         margin: 0;
         font-size: 2.6vw;
       }
@@ -47,6 +61,8 @@
       background: $seafoam;
 
       #social-links{
+        opacity: 0;
+
         a{
           width: 50px;
           height: 50px;
