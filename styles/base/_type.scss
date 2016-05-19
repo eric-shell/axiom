@@ -39,8 +39,49 @@ $oblique: 'oblique', sans-serif;
 $roman: 'roman', sans-serif;
 $heavy: 'heavy', sans-serif;
 
+.color-seafoam{
+  color: $seafoam;
+}
+.color-gray-light{
+  color: $gray-light;
+}
+.color-gray-medium{
+  color: $gray-medium;
+}
+.color-gray-dark{
+  color: $gray-dark;
+}
+
 body{
   font-family: $roman;
+}
+
+h1{
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  font-family: $heavy;
+  font-size: 80px;
+  line-height: .95;
+}
+
+h2{
+  font-family: $heavy;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+h3{
+  text-transform: uppercase;
+  font-size: 24px;  
+}
+
+h1, h2, h3{
+  .box{
+    line-height: 3;
+    font-size: .25em;
+    padding: .25em 1em;
+    letter-spacing: 0;
+  }
 }
 
 .cta{

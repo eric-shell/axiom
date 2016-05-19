@@ -1,5 +1,7 @@
 @media #{$small-up}{
   header{
+    z-index: 10;
+    position: relative;
 
     .header-logo{
       width: 148px;
