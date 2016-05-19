@@ -33,7 +33,7 @@ body{
 
 // Setting basic container class
 .container{
-  width: $container;
+  max-width: $container;
   margin: 0 auto;
   position: relative;
 }
