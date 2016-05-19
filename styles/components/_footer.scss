@@ -5,6 +5,7 @@
     .footer-join{
       width: 70%;
       height: 200px;
+      font-size: 2.6vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -13,7 +14,22 @@
 
       a{
         color: $seafoam;
+        position: relative;
         text-decoration: none;
+
+        &:hover,
+        &:focus{
+
+          &:before{
+            content: '';
+            position: absolute;
+            bottom: .1em;
+            left: 0;
+            width: 100%;
+            height: .075em;
+            background: $seafoam;
+          }
+        }
       }
     }
 
