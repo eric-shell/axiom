@@ -7,17 +7,18 @@
 
       #tone{
         opacity: 1;
-        animation: fromLeft 1s ease-in-out;
+        animation: reveal 1s ease-in-out;
       }
 
       #kickstarter{
         opacity: 1;
-        animation: fromRight 1s ease-in-out;
+        animation: reveal 1s ease-in-out;
       }
     }
 
     .container{
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: flex-end;
       margin: -68px auto 34px;
@@ -26,7 +27,7 @@
     #tone{
       opacity: 0;
       z-index: 10;
-      width: calc(60% - 17px);
+      width: 100%;
       position: relative;
       background: $white;
       padding: 60px 70px;
@@ -39,7 +40,8 @@
     #kickstarter{
       opacity: 0;
       z-index: 10;
-      width: calc(40% - 17px); 
+      width: 100%; 
+      margin: 34px 0 0;
       position: relative;
       background: $white;
       padding: 30px;
@@ -81,4 +83,32 @@
 }
 
 @media #{$large-up}{
+  #information{
+
+    &.visible{
+
+      #tone{
+        opacity: 1;
+        animation: fromLeft 1s ease-in-out;
+      }
+
+      #kickstarter{
+        opacity: 1;
+        animation: fromRight 1s ease-in-out;
+      }
+    }
+
+    .container{
+      flex-direction: row;
+    }
+
+    #tone{
+      width: calc(60% - 17px);
+    }
+
+    #kickstarter{
+      margin: 0;
+      width: calc(40% - 17px); 
+    }
+  }
 }

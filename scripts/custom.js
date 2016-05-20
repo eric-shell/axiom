@@ -31,7 +31,7 @@ $(function() {
 
 $(function() {
   setInterval(function() {
-    $("#features, #opportunity, footer")
+    $("#features, #opportunity")
       .filter(":onScreen")
       .addClass("visible")
   }, 250)
