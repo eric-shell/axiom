@@ -1,9 +1,10 @@
 @media #{$small-up}{
   footer{
     display: flex;
+    flex-direction: column;
 
     .footer-join{
-      width: 70%;
+      width: 100%;
       height: 200px;
       display: flex;
       align-items: center;
@@ -13,7 +14,7 @@
 
       p{
         margin: 0;
-        font-size: 2.6vw;
+        font-size: 4.5vw;
       }
 
       a{
@@ -38,7 +39,7 @@
     }
 
     .footer-social{
-      width: 30%;
+      width: 100%;
       height: 200px;
       display: flex;
       align-items: center;
@@ -97,4 +98,19 @@
 }
 
 @media #{$large-up}{
+  footer{
+    flex-direction: row;
+
+    .footer-join{
+      width: 70%;
+
+      p{
+        font-size: 2.6vw;
+      }
+    }
+
+    .footer-social{
+      width: 30%;
+    }
+  }
 }
