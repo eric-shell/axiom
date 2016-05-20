@@ -1,13 +1,18 @@
 @media #{$small-up}{
   #hero{
     z-index: 1;
-
     padding: 0 17px;
     color: $white;
     position: relative;
     background: url(../images/hero-large.png);
     background-size: cover;
     background-position: center bottom;
+
+    .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     &:after{
       content: '';
@@ -21,9 +26,9 @@
 
     #headline{
       width: 100%;
-      min-width: 530px;
-      height: 100%;
       display: flex;
+      text-align: center;
+      padding: 120px 0 20px;
       flex-direction: column;
       justify-content: center;
       animation: fromLeft 1s ease-in-out;
@@ -43,6 +48,7 @@
       position: relative;
       width: 401px;
       height: 736px;
+      transform: scale(.8);
       animation: reveal 1s ease-in-out;
     }
   }
@@ -56,14 +62,23 @@
   #hero{
     height: 760px;
 
+    .container{
+      flex-direction: row;
+    }
+
     #headline{
       width: 40%;
+      min-width: 530px;
+      text-align: left;
+      height: 100%;
+      padding: 0;
     }
 
     #device{
       position: absolute;
       right: -22px;
       bottom: -128px;
+      transform: scale(1);
     }
   }
 }

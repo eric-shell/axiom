@@ -13,6 +13,7 @@
     }
 
     .header-cta{
+      display: none;
       position: absolute;
       right: 34px;
       top: 34px;
@@ -25,4 +26,10 @@
 }
 
 @media #{$large-up}{
+  header{
+
+    .header-cta{
+      display: block;
+    }
+  }
 }
