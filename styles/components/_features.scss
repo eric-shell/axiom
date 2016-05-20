@@ -18,7 +18,7 @@
     }
 
     .feature{
-      width: 50%;
+      width: 100%;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -60,7 +60,22 @@
         font-family: 'heavy';
       }
 
+      &:nth-child(n+2){
+        border-top: 1px solid #e6e6e6;    
+      }
+    }
+  } 
+}
+
+@media #{$medium-up}{
+
+  #features{
+
+    .feature{
+      width: 50%;
+
       &:nth-child(even){
+        border-top: 0;
         border-left: 1px solid #e6e6e6;        
       }
 
@@ -68,10 +83,7 @@
         border-top: 1px solid #e6e6e6;
       }
     }
-  } 
-}
-
-@media #{$medium-up}{
+  }
 }
 
 @media #{$large-up}{
