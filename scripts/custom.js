@@ -1,33 +1,38 @@
-// Put this in a file somewhere and include it
-function isElementInViewport(el) {
-  el = $(el).get(0);
-  var rect = el.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)*1.75 && /*or $(window).height() */
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-  );
-}
+// onScreen jQuery plugin v0.2.1
+// (c) 2011-2013 Ben Pickles
+//
+// http://benpickles.github.io/onScreen
+//
+// Released under MIT license.
+;(function($) {
+  $.expr[":"].onScreen = function(elem) {
+    var $window = $(window)
+    var viewport_top = $window.scrollTop()
+    var viewport_height = $window.height()
+    var viewport_bottom = viewport_top + viewport_height
+    var $elem = $(elem)
+    var top = $elem.offset().top
+    var height = $elem.height()
+    var bottom = top + height
 
-// Add this functionality to any jQuery object
-$.fn.addClassWhenInView = function (classname) {
-  var $this = this;
-  /**
-   * you might find that `$(window).scroll` fires too often.
-   * another technique is the use `setTimeout`
-   * and fire every 50ms and check all your
-   * elements are in view
-   */
-  $(window).scroll(function () {
-    $this.each(function () {
-      // this is probably better
-      // $(this).toggleClass(classname, isElementInViewport(this));
-      if (isElementInViewport(this)) {
-        $(this).addClass(classname);
-      }
-    });
-  });
-}
+    return (top >= viewport_top && top < viewport_bottom) ||
+           (bottom > viewport_top && bottom <= viewport_bottom) ||
+           (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+  }
+})(jQuery);
 
-$('#hero, #information, #features, #opportunity, footer').addClassWhenInView('visible');
+$(function() {
+  setInterval(function() {
+    $("#information")
+      .filter(":onScreen")
+      .addClass("visible")
+  }, 1000)
+})
+
+$(function() {
+  setInterval(function() {
+    $("#features, #opportunity, footer")
+      .filter(":onScreen")
+      .addClass("visible")
+  }, 250)
+})
